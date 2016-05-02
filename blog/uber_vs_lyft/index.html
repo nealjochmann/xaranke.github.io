@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Uber vs Lyft</title>
+
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="https://use.typekit.net/lpf3fgz.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </head>
+
+  <body class="blog blog_uber_vs_lyft blog_uber_vs_lyft_index">
+    <div class="container">
+      <div class="row">
+    <div class="eight columns">
+        <h2><a href="../">Kshitij Aranke</a></h2>
+    </div>
+    <div class="one column hideonmobile">
+        <h4 class="navbar">&nbsp;&nbsp;&nbsp;&nbsp;<a href="../blog">blog</a></h4>
+    </div>
+    <div class="one column hideonmobile">
+        <h4 class="navbar"><a href="https://twitter.com/xaranke" target="_blank">twitter</a></h4>
+    </div>
+    <div class="one column hideonmobile">
+        <h4 class="navbar"><a href="https://github.com/xaranke" target="_blank">github</a></h4>
+    </div>
+    <div class="one column hideonmobile">
+    	<h4 class="navbar"><a href="mailto:kshitij.aranke@gmail.com" target="_blank">email</a>&nbsp;</h4>
+    </div>
+</div>
+
+<br>
+      <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<h4>Price Showdown: Uber vs Lyft</h4>
+
+After Lyft charged me $3 more than Uber for an identical ride in the Twin Cities, I decided to investigate the discrepancy. <br>
+Was Uber always cheaper? In case of the Twin Cities, <a href="https://www.uber.com/cities/minneapolis/" target="_blank">not</a> <a href="https://www.lyft.com/cities/minneapolis-st-paul" target="_blank">really</a>, so this was probably just a fluke.
+<br><br>
+But this got me thinking, are there cities where one is consistently cheaper than the other? <br>
+To find out, I decided to plot \(\Delta rate\_per\_mile = uber\_rate\_per\_mile - lyft\_rate\_per\_mile\) against \(\Delta rate\_per\_minute = uber\_rate\_per\_minute - lyft\_rate\_per\_minute\).
+
+<div class="row">
+	<div class="one columns hideonmobile">&nbsp;</div>
+	<div class="ten columns"><img class="u-max-full-width" src="../images/uber_vs_lyft.png"></div>
+	<div class="one columns hideonmobile">&nbsp;</div>
+</div>
+
+Now let us focus on Quadrants I and IV since that is where a service dominates its competition on both \(\Delta rate\_per\_mile\) and \(\Delta rate\_per\_minute\). <br><br>
+
+Right off the bat, we see that Lyft is cheaper in Silicon Valley, CA. I'm not sure why, but I think Lyft is spending quite a bit here as an experiment to see whether it can dominate a geography and then hopefully expand this reach to the rest of the country. <br><br>
+
+As for Uber, four of the six markets it dominates in are holiday destinations which makes this a winner-take-all market due to relatively low supply vs high demand. As for why Uber dominates in New Jersey and Baltimore, I don't have a clear explanation but my guess would be that those cities have something lurking beneath on a local level.<br><br>
+
+<a href="../blog" class="button">Back</a>
+
+      <hr>
+<footer>
+  Made with love by Kshitij Aranke in Minneapolis, MN
+</footer>
+    </div>
+  </body>
+</html>
